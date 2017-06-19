@@ -39,7 +39,7 @@ class ReportController extends Controller
                 $user = $user->first();
                 Session::put('userlogin', $user);
 
-                return redirect('oldapp/perday');
+                return redirect('oldapp/report/pertanggal');
             }
 
             return redirect()->back()->withInput()->withErrors(['failed' => 'Username / password salah.']);
